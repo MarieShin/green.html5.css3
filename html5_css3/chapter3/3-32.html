@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS3 Selector Basic</title>
+      <style>
+            /* 여기서 'rint' 는 사용자가 임의로 지정 가능 */
+            p {counter-increment: rint; }
+            p::before { content: counter(rint) "."; }
+            p::after { content: " - " attr(data-page) " page"; }
+            p::first-letter { font-size: 3em; }
+      </style>
+</head>
+<body>
+      <h1>Lorem ipsum dolor sit amet</h1>
+      <p data-page="52">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit hic at sed? Vel expedita optio distinctio minima, dolorum adipisci, pariatur recusandae odio quidem excepturi delectus veritatis quae doloribus dolores accusantium.</p>
+      <p data-page="273">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis veniam eius veritatis quasi, debitis, sunt fuga aspernatur deleniti repellendus voluptates nulla eveniet rerum fugiat quas saepe delectus odit totam in?</p>
+</body>
+</html>

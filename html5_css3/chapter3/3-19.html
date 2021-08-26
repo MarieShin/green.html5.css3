@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS3 Selector Basic</title>
+      <style>
+            /* table > tr > th {
+                  color: red;
+            } */
+            /* table 후손선택자 th에 적용시키고 싶으면 아래와 같이 적용한다. 
+            --> table 밑에 tbody가 자동 생성되기 때문이다. */
+            table  tr > th {
+                  color: red; 
+            }
+      </style>
+</head>
+<body>
+      <table border="1">
+            <tr>
+                  <th>Name</th>
+                  <th>Region</th>
+            </tr>
+            <tr>
+                  <td>윤인성</td>
+                  <td>서울특별시 강서구 내발산동</td>
+            </tr>
+      </table>
+</body>
+</html>

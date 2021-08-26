@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS3 Selector Basic</title>
+      <style>
+            /* header의 자손 선택자 h1 */
+            #header > h1 { color: red; }
+
+            /* section의 자손 선택자 h1 */
+            #section > h1 { color: orange; }
+      </style>
+</head>
+<body>
+      <div id="header">
+            <h1 class="title">Lorem ipsum</h1>
+            <div id="nav">
+                  <h1>Navigation</h1>
+            </div>
+      </div>
+      <div id="section">
+            <h1 class="title">Lorem ipsum</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas repellendus officiis beatae inventore deleniti neque sunt dicta alias blanditiis, ea tenetur porro temporibus pariatur iste rerum eum perspiciatis facere assumenda.</p>
+      </div>
+</body>
+</html>
