@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Float Layout Example2</title>
+      <style>
+            body {
+                  width: 960px;
+                  margin: 0 auto;
+            }
+
+            #header, #navigation, #footer {
+                  text-align: center;
+            }
+
+            #aside {
+                  width: 260px; 
+                  float: right;
+            }
+
+            .section {
+                  width: 700px;
+                  float: left;
+            }
+            
+            #wrap {
+                  overflow: hidden;
+            }
+      </style>
+</head>
+<body>
+      <div id="header"><h1>Header</h1></div>
+      <div id="navigation"><h1>Navigation</h1></div>
+      <div id="wrap">
+            <div id="aside">
+                  <h1>Aside</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio excepturi quae beatae minima ad perferendis dolore eaque cum sint. Obcaecati, itaque aliquid dolores odio quis natus earum ab maiores cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed maxime alias non necessitatibus libero commodi culpa, sapiente enim, magnam veniam repellendus molestias quas dolores, praesentium aperiam ex placeat mollitia atque?</p>
+            </div>
+            <div id="section1" class="section">
+                  <h1>Section1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, rem officia eveniet in omnis debitis vitae laudantium facilis recusandae labore, reiciendis animi unde maiores. Dolore ipsum maiores dolor adipisci incidunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aliquid eveniet veritatis quidem corporis aliquam tempora neque est, odit officia! Quisquam ullam sit error molestiae earum! Exercitationem maiores repellat dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia labore expedita aliquid aperiam exercitationem sed eveniet reiciendis iure nisi debitis, id nemo sint, placeat itaque laudantium maiores asperiores ut? Rerum!</p>
+            </div> 
+            <div id="section2" class="section">
+                  <h1>Section2</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officia doloribus sequi error pariatur sed molestiae tempore, corporis at vitae ratione asperiores, rerum omnis cupiditate unde velit ipsa distinctio cum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, rem officia eveniet in omnis debitis vitae laudantium facilis recusandae labore, reiciendis animi unde maiores. Dolore ipsum maiores dolor adipisci incidunt?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum molestias aperiam harum eveniet recusandae velit quasi sed consequuntur repellendus explicabo provident, magni nisi, illum asperiores impedit voluptas debitis? Doloremque, perferendis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, eligendi? Labore quaerat in, accusamus qui assumenda ex voluptates, quibusdam error molestias nihil iure voluptatibus similique necessitatibus? Cupiditate praesentium accusamus ut.</p>
+            </div>
+      </div>
+      <div id="footer"><h1>Footer</h1></div>
+</body>
+</html>

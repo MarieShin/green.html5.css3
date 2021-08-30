@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>마이 무비 홈</title>
+      <style>
+            body {
+                  width: 960px;
+                  margin: 0 auto;
+                  background-color: lightcyan;
+            }
+            #aside {
+                  width: 220px;
+                  float: right;
+            }
+            #section {
+                  width: 740px;
+                  float: left;
+            }
+            #wrap {
+                  overflow: hidden;
+            }
+
+            #header > h1 {
+                  font-size: 30px;
+                  text-align: center;
+                  color: royalblue;
+
+            }
+
+            #nav {
+                  margin-bottom: 30px;
+            }
+
+            #nav > ul {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                  overflow: hidden;
+                  background-color: royalblue;
+            }
+
+            #nav li {
+                  float: left;
+            }
+
+            #nav a {
+                  display: block;
+                  color: white;
+                  text-align: center;
+                  padding: 16px;
+                  text-decoration: none;
+            }
+
+            #footer {
+                  margin-top: 30px;
+                  font-size: 14px;
+                  font-style: italic;
+                  color: #333;
+            }
+
+            #section > h3 { font-size: 23px; }
+
+            #section > p:first-of-type {
+                  font-size: 16px;
+                  font-weight: bold;
+                  font-family: 'Times New Roman', sans-serif;
+            }
+
+            #section > p:nth-of-type(2) {
+                  font-size: 15px;
+                  font-family: 'Times New Roman', sans-serif;        
+            }
+            #section > p:nth-of-type(2)::first-letter { 
+                 font-size: 1.5em; 
+            }
+
+            #section > img { border: 3px solid royalblue; }
+
+            #aside { margin-top: 20px; }
+
+            #aside > h3 {
+                  font-size: 18px;
+                  color: red;
+                  font-style: italic;
+            }
+
+            #aside > p {
+                  font-size: 16px;
+                  color: brown;
+            }
+
+            #aside > img {
+                  border: 2px solid yellow;
+            }
+
+      </style>
+</head>
+<body>
+      <div id="header">
+            <h1>My Movie Home</h1>
+      </div>
+      <div id="nav">
+            <ul>
+                  <li><a href="#">영화소개</a></li>
+                  <li><a href="#">예매</a></li>
+                  <li><a href="#">영화관</a></li>
+                  <li><a href="#">이벤트 & 공지</a></li>
+            </ul>
+      </div>
+      <div id="wrap">
+            <div id="aside">
+                  <h3>!깜짝 이벤트!</h3>
+                  <p>영어 이름이 'home'으로<br />끝나는 사람에게 팝콘세트<br />공짜!!!</p>
+                  <img src="img/popcone_image.jpg" alt="팝콘 이미지" width="190"/>
+            </div>
+            <div id="section">
+                  <h3>오늘의 영화</h3>
+                  <img src="img/movie_image.jpg" alt="오늘의 영화이미지" width="250" />
+                  <p>줄거리</p> 
+                  <p>
+                        머나먼 사막 속 신비의 아그라바 왕국의 시대. <br />
+                        좀도둑 '알라딘'은 마법사 '자파'의 의뢰로 마법 램프를 찾아 나섰다가 <br />
+                        주인에게 세 가지 소원을 들어주는 지니를 만나게 되고, <br />
+                        자스민 공주의 마음을 얻으려다 생각도 못했던 모험에 휘말리게 되는데…
+                  </p>
+            </div>
+      </div>
+      <hr />
+      <div id="footer">제작사 : Marie Shin / 010-1234-1234</div>
+</body>
+</html>
