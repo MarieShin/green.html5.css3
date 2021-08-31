@@ -4,19 +4,26 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Patrick+Hand&display=swap" rel="stylesheet">
       <title>마이 무비 홈</title>
       <style>
             body {
                   width: 960px;
                   margin: 0 auto;
-                  background-color: lightcyan;
+                  background-color: #f7f7f0;
+                  background-image: url('img/movie_image_02.jpg');
+                  background-size: 400px;
+                  background-repeat: no-repeat;
+                  background-position: bottom right;
+                  background-attachment: scr;
+                  font-family: 'Times New Roman', sans-serif; 
             }
             #aside {
                   width: 220px;
                   float: right;
             }
             #section {
-                  width: 740px;
+                  width: 730px;
                   float: left;
             }
             #wrap {
@@ -24,10 +31,11 @@
             }
 
             #header > h1 {
-                  font-size: 30px;
+                  font-size: 50px;
                   text-align: center;
-                  color: royalblue;
-
+                  color: #cab387;
+                  font-family: 'Lobster', cursive;
+                  font-family: 'Patrick Hand', cursive;
             }
 
             #nav {
@@ -39,7 +47,7 @@
                   margin: 0;
                   padding: 0;
                   overflow: hidden;
-                  background-color: royalblue;
+                  background-color: #cab387;
             }
 
             #nav li {
@@ -56,6 +64,7 @@
 
             #footer {
                   margin-top: 30px;
+                  margin-bottom: 30px;
                   font-size: 14px;
                   font-style: italic;
                   color: #333;
@@ -66,12 +75,10 @@
             #section > p:first-of-type {
                   font-size: 16px;
                   font-weight: bold;
-                  font-family: 'Times New Roman', sans-serif;
             }
 
             #section > p:nth-of-type(2) {
                   font-size: 15px;
-                  font-family: 'Times New Roman', sans-serif;        
             }
             #section > p:nth-of-type(2)::first-letter { 
                  font-size: 1.5em; 
@@ -95,7 +102,6 @@
             #aside > img {
                   border: 2px solid yellow;
             }
-
       </style>
 </head>
 <body>
@@ -128,7 +134,7 @@
                   </p>
             </div>
       </div>
-      <hr />
+      <hr style="height:1px; border-width:0; color:#cab387; background-color:#cab387;" />
       <div id="footer">제작사 : Marie Shin / 010-1234-1234</div>
 </body>
 </html>
