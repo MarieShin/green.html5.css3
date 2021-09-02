@@ -9,6 +9,7 @@
 </head>
 <body>
       <header id="main_header">
+            <!-- 로그, 서브 메뉴(1) -->
             <div id="logo">
                   <h1>NHBank</h1>
                   <ul class="left">
@@ -23,7 +24,7 @@
                         <li><a href="#">검색</a></li>
                   </ul>
             </div>
-
+            <!-- 헤더 메인 메뉴 -->
             <nav id="main_gnb">
                   <ul>
                         <li><a href="#">조회</a></li>
@@ -36,6 +37,7 @@
                         <li><a href="#">메뉴</a></li>
                   </ul>
             </nav>
+            <!-- 헤더 서브 메뉴(2) -->
             <nav id="main_lnb">
                   <ul class="left">
                         <li><a href="#">로그인</a></li>
@@ -50,75 +52,127 @@
             </nav>
       </header>
       <aside></aside>
-      <section id="main_section">
-            <img src="http://via.placeholder.com/300" alt="" />
-            <nav>
-                  <ul>
-                        <li><a href="#">큰글뱅킹</a></li>
-                        <li><a href="#">거래내역</a></li>
-                        <li><a href="#">즉시이체</a></li>
-                        <li><a href="#">계좌조회</a></li>
-                        <li><a href="#">예금가입</a></li>
-                        <li><a href="#">펀드가입</a></li>
-                        <li><a href="#">대출가입</a></li>
-                        <li><a href="#">빠른조회</a></li>
-                  </ul>
-            </nav>
-            <div>
-                  <h1>NH Bank와 함께!</h1>
-                  <div>
+      <div id="content">
+            <section id="main_section">
+                  <img src="http://via.placeholder.com/960x400" alt="" />
+                  <nav id="content_gnb">
                         <ul>
-                              <li><a href="#">전체</a></li>
-                              <li><a href="#">이벤트만 보기</a></li>
-                              <li><a href="#">상품만 보기</a></li>
+                              <li><a href="#">큰글뱅킹</a></li>
+                              <li><a href="#">거래내역</a></li>
+                              <li><a href="#">즉시이체</a></li>
+                              <li><a href="#">계좌조회</a></li>
+                              <li><a href="#">예금가입</a></li>
+                              <li><a href="#">펀드가입</a></li>
+                              <li><a href="#">대출가입</a></li>
+                              <li><a href="#">빠른조회</a></li>
                         </ul>
+                  </nav>
+                  <div id="content_lnb">
+                        <h1>NH Bank와 함께!</h1>
+                        <input id="all" type="radio" name="tab" checked="checked" />
+                        <input id="event" type="radio" name="tab" />
+                        <input id="item" type="radio" name="tab" />
+                        <section class="buttons">
+                              <label for="all">전체</label>
+                              <label for="event">이벤트만 보기</label>
+                              <label for="item">상품만 보기</label>
+                        </section>
+                        <div class="tab_item">
+                              <ul>
+                                    <li>
+                                          <a href="#">
+                                                <img src="http://placehold.it/300x400" />
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a href="#">
+                                                <img src="http://placehold.it/300x400" />
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a href="#">
+                                                <img src="http://placehold.it/300x400" />
+                                          </a>
+                                    </li>
+                              </ul>
+                        </div>
+                        <div class="tab_item">
+                              <ul>
+                                    <li>
+                                          <a href="#">
+                                                <img src="http://placehold.it/300x400" />
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a href="#">
+                                                <img src="http://placehold.it/300x400" />
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a href="#">
+                                                <img src="http://placehold.it/300x400" />
+                                          </a>
+                                    </li>
+                              </ul>
+                              
+                        </div>
+                        <div class="tab_item">
+                              <ul>
+                                    <li>
+                                          <a href="#">
+                                                <img src="http://placehold.it/300x400" />
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a href="#">
+                                                <img src="http://placehold.it/300x400" />
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a href="#">
+                                                <img src="http://placehold.it/300x400" />
+                                          </a>
+                                    </li>
+                              </ul>
+                             
+                        </div>
                   </div>
-                  <div>
-                        <ul>
-                              <li><a href="#">데이터</a></li>
-                              <li><a href="#">데이터</a></li>
-                              <li><a href="#">데이터</a></li>
-                        </ul>
-                  </div>
-            </div>
-      </section>
-      <section id="sub_section">
-            <div>
-                  <div class="notice_area">
+            </section>
+            <section id="sub_section">
+                  <article class="sub_article">
                         <h1>새소식</h1>
-                        <ul>
-                              <li><a href="#"></a></li>
-                              <li><a href="#"></a></li>
-                              <li><a href="#"></a></li>
-                        </ul>
-                  </div>
-                  <div class="security_area">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsam ad, doloremque adipisci, dolores eius voluptatum a sed distinctio ex commodi illum accusantium, deserunt tempora veniam ipsum autem ratione maiores.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minus, iure atque velit eum dolore molestias obcaecati! Consectetur, cum aliquid vel at ab iure laborum aliquam, nesciunt aspernatur voluptatibus harum?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quis quia! Optio, consequatur vero! Minima animi veniam placeat eius et, soluta sapiente! Neque, repudiandae animi dolorem expedita vitae soluta et?</p>
+                  </article>
+                  <article class="sub_article">
                         <h1>보안소식</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam tempore eveniet sed culpa dolorem quibusdam necessitatibus aliquam quae, exercitationem unde, mollitia optio ad expedita repellendus soluta eius deserunt provident veritatis.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium eius at a inventore dicta excepturi non maiores deserunt! Vel, cupiditate a? Maiores culpa dolores voluptates tenetur? Repudiandae dolore deleniti mollitia?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, dignissimos quidem. Fugiat officiis debitis similique culpa pariatur, delectus aperiam ex ea quos aspernatur et itaque, soluta impedit eius veritatis dignissimos.</p>
+                  </article>
+                  <article class="sub_article">
+                        <h1>보안서비스</h1>
+                        <p>금융사기예방을 위한<br />필수 보안서비스</p> 
                         <ul>
-                              <li><a href="#"></a></li>
-                              <li><a href="#"></a></li>
-                              <li><a href="#"></a></li>
+                              <li><a href="#">금융소비자보호</a></li>
+                              <li><a href="#">주택도시기금</a></li>
+                              <li><a href="#">에스크로</a></li>
                         </ul>
-                  </div>
-            </div>
-            <div>
+                  </article>
+            </section>
+            <div id="link_list">
                   <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                        <li><a href="#">서식약관자료실</a></li>
+                        <li><a href="#">서민금융</a></li>
+                        <li><a href="#">상품공시실(은행)</a></li>
+                        <li><a href="#">상품공시실(농축협)</a></li>
                   </ul>
             </div>
-            <div>
-                  <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                  </ul>
-            </div>
-      </section>
-      <footer>
+      
+            
+      </div>
+      <footer id="main_footer">
             <div id="footer_menu">
                   <ul>
                         <li><a href="#">사고신고</a></li>
