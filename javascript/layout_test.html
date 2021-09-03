@@ -31,9 +31,11 @@
             var str = "<div>";
                   str += "<h1 style='color:blue;'>" + text + "</h1>";
                   str += "</div>"
-                  str += "<ul><li><a href='#'>" + liText1 + "</a></li>"
+                  str += "<ul>";
+                  str += "<li><a href='#'>" + liText1 + "</a></li>"
                         + "<li><a href='#'>" + liText2 + "</a></li>" 
-                        + "<li><a href='#'>" + liText3 + "</a></li></ul>";
+                        + "<li><a href='#'>" + liText3 + "</a></li>";
+                  str += "</ul>";
             
             document.write(str);
       </script>
