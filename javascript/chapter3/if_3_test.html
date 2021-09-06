@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>if 예문</title>
+</head>
+<body>
+      <script>
+            var userName = prompt("방문자의 이름은?", "");
+
+            //  아래와 같이 적용하면 null, "", undefined를 체크할 수 있다. 
+            //  -> true (값이 있을 때)일 때만 들어오기 때문에
+            if (userName) {
+                  document.write(userName + "님 반갑습니다! 방문을 환영합니다.");
+            }
+      </script>
+</body>
+</html>

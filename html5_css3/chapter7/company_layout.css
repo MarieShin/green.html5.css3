@@ -230,22 +230,27 @@ body { min-width: 960px; }
 
 /* 하위 컨텐츠 */
 
-#content > #sub_section {
+#content > #sub_wrap {
       overflow: hidden;
       margin-top: 70px;
 }
 
-#content > #sub_section > article.sub_article {
+#content > #sub_wrap > #sub_section {
       float: left;
-      width: 250px;
-      margin-right: 25px;
+      overflow: hidden;
 }
-#content > #sub_section > article.sub_article > h1 {
+
+#content > #sub_wrap > #sub_section > article.sub_article {
+      float: left;
+      width: 266px;
+      margin-right: 50px;
+}
+#content > #sub_wrap > #sub_section > article.sub_article > h1 {
       font-size: 23px;
       font-weight: bold;
       margin-bottom: 20px;
 }
-#content > #sub_section > article.sub_article > p {
+#content > #sub_wrap > #sub_section > article.sub_article > p {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -254,29 +259,63 @@ body { min-width: 960px; }
 }
 
 /* 하위 컨텐츠 (보안서비스) */
-#content > #sub_section > article.sub_article:nth-of-type(3) {
-      border-radius: 0 10px 10px 0;
+#content > #sub_wrap > #blue_area_wrap {
+      position: relative;
+      float: right;
+      width: 310px; height: 479px;
+      border-radius: 0 10px 0 10px;
       background: blue;
       color: white;
-      padding: 20px;
 }
 
-#content > #sub_section > article.sub_article:nth-of-type(3) > h1 {
+#content > #sub_wrap > #blue_area_wrap > h1 {
+      position: absolute;
+      top: 20px; left: 30px;
       font-size: 23px;
       font-weight: bold;
-      margin-bottom: 10px;
+      z-index: 10;
 }
-#content > #sub_section > article.sub_article:nth-of-type(3) > p {
+#content > #sub_wrap > #blue_area_wrap > p {
+      position: absolute;
+      top: 60px; left: 30px;
       font-size: 15px;
+      z-index: 10;
 }
-#content > #sub_section > article.sub_article:nth-of-type(3) > ul {
+
+#content > #sub_wrap > #blue_area_wrap > img {
+      position: absolute;
+      top: 30px;
+      z-index: 0;
 }
-#content > #sub_section > article.sub_article:nth-of-type(3) > ul > li {
+
+#content > #sub_wrap > #blue_area_wrap > ul {
+      position: absolute;
+      bottom: 0; 
+      
 }
-#content > #sub_section > article.sub_article:nth-of-type(3) > ul  > li > a {
+#content > #sub_wrap > #blue_area_wrap > ul  > li > a {
       display: block;
       color: white;
       border: 1px solid white;
+      width: 310px;
+      height: 62px;
+      line-height: 62px;
+      font-size: 18px;
+      font-weight: 600;
+      padding-left: 30px
+}
+#content > #sub_wrap > #blue_area_wrap > ul  > li > a:hover {
+      color: yellow;
+}
+
+/* 새소식, 보안소식 밑에 리스트 */
+#content > #sub_wrap > #sub_section > #link_list {
+}
+#content > #sub_wrap > #sub_section > #link_list > ul {
+}
+#content > #sub_wrap > #sub_section > #link_list > ul > li {
+}
+#content > #sub_wrap > #sub_section > #link_list  > ul > li > a {
 }
 
 
