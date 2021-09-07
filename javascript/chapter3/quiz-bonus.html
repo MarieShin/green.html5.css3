@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>퀴즈-보너스</title>
+</head>
+<body>
+      <script>
+            var money = Number(prompt("돈을 넣어주세요.", "0"));
+            var rest;
+            if (money) {
+                  var sneck = prompt("과자를 선택해주세요. (허니버터, 칸쵸, 프링글스)", "");
+                  if (sneck == "허니버터") {
+                        if (money >= 1300) {
+                              rest = money - 1300;
+                              document.write("허니버터, 거스름돈 : " + rest + "원");
+                        } else {
+                              alert("돈이 모자랍니다. 돈을 다시 넣어주세요.");
+                              location.reload();
+                        }
+                  } else if (sneck == "칸쵸") {
+                        if (money >= 1500) {
+                              rest = money - 1500;
+                              document.write("칸쵸, 거스름돈 : " + rest + "원");
+                        } else {
+                              alert("돈이 모자랍니다. 돈을 다시 넣어주세요.");
+                              location.reload();
+                        }
+                  } else if (sneck == "프링글스") {
+                        if (money >= 3000) {
+                              rest = money - 3000;
+                              document.write("프링글스, 거스름돈 : " + rest + "원");
+                        } else {
+                              alert("돈이 모자랍니다. 돈을 다시 넣어주세요.");
+                              location.reload();
+                        }
+
+                  } else {
+                  // 과자가 존재하지 않을 때
+                        alert("해당 과자가 존재하지 않습니다. 다시 선택해주세요.");
+                        location.reload();
+                  }
+            } else {
+                  // 돈을 넣지않았을 때
+                  alert("돈을 넣어주세요.");
+                  location.reload();
+            }
+      </script>
+</body>
+</html>
