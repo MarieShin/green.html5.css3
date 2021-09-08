@@ -4,15 +4,16 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>퀴즈1-2</title>
+      <title>반복문 퀴즈1-6</title>
 </head>
 <body>
       <script>
-            var num = prompt("정수를 입력하세요.", "0");
-            if (num >= 1 && num % 3 == 0) {
-                  document.write("3의 배수");
-            } else {
-                  document.write("3의 배수 아님");
+            var i = 0;
+            while (i < 10) {
+                  if (i % 2 != 0) {
+                        document.write(i, "<br />");
+                  }
+                  i++;
             }
       </script>
 </body>

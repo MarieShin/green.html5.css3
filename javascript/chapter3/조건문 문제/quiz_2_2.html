@@ -8,12 +8,12 @@
 </head>
 <body>
       <script>
-            var height = prompt("당신의 신장은?", "0");
+            var height = prompt("당신의 신장은?", 0);
             if (height >= 150) {
                   document.write("놀이기구 이용 가능");
             } else {
                   var confirm = confirm("부모와 함께 왔나요?");
-                  if (confirm) {
+                  if (confirm) { // null, "", undefined, 0 -> false
                         document.write("좋은 시간 보내렴~");
                   } else {
                         document.write("어른 모시고 다시 오렴~");

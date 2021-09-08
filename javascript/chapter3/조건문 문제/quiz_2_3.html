@@ -8,13 +8,9 @@
 </head>
 <body>
       <script>
-            var a = Number(prompt("첫 번째 정수를 입력해주세요", "0"));
-            var b = Number(prompt("두 번째 정수를 입력해주세요", "0"));
-            var c = Number(prompt("세 번째 정수를 입력해주세요", "0"));
-
-            console.log(a);
-            console.log(b);
-            console.log(c);
+            var a = Number(prompt("첫 번째 정수를 입력해주세요", 0));
+            var b = Number(prompt("두 번째 정수를 입력해주세요", 0));
+            var c = Number(prompt("세 번째 정수를 입력해주세요", 0));
 
             var sum = a + b + c;
             var aver = sum / 3;
@@ -67,6 +63,18 @@
                         min = a;
                   }
             }
+
+            /*
+            var max = a;
+            var min = a;
+            // 최대값
+            if (max < b) max = b;
+            if (max < c) max = c;
+
+            // 최소값
+            if (min > b) min = b;
+            if (min > c) min = c;
+            */
 
             document.write("최대값 : " + max, "<br />");
             document.write("최소값 : " + min, "<br />");
