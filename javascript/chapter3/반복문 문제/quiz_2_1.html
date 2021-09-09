@@ -8,13 +8,22 @@
 </head>
 <body>
       <script>
+            /*
+            
+            *
+            **
+            ***
+            ****
+            *****
+
+            */
+            
             var str = "";
-            for (var i = 1; i <= 5; i++) {
-                  for (var j = 0; j < i; j++) {
-                        // document.write("*");
+            for (var i = 0; i < 5; i++) {
+                  // 초기화 str = '';  <-- 여기서 해줘도 된다.
+                  for (var j = 0; j <= i; j++) {
                         str += "*";
                   }
-                  // document.write("<br />");
                   console.log(str);
                   str = "";
             }
