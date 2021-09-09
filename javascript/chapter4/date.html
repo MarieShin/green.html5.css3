@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Date Quiz</title>
+</head>
+<body>
+      <script>
+            // 오늘부터 3일 뒤 날짜를 구하시오.
+            var addDay = 3;
+            var nowDate = new Date();
+            var addDate = nowDate.getTime() + (addDay * 24 * 60 * 60 * 1000);
+            nowDate.setTime(addDate);
+
+            document.write(nowDate.getFullYear() + "년" + (nowDate.getMonth() + 1) + "월" + nowDate.getDate() + "일");
+            // nowDate.getYear() 는 해당 년도에서 1900을 빼준다. 
+      </script>
+</body>
+</html>
