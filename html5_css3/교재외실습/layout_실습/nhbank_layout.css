@@ -26,7 +26,6 @@ img { border: 0; }
 }
 #main_header > #logo > h1 {
       float: left;
-      color: blue;
 }
 
 #main_header > #logo > ul.left {
@@ -42,9 +41,10 @@ img { border: 0; }
       padding: 10px;
 }
 #main_header > #logo > ul.left > li > a {
-      color: black;
+      color: #111;
       font-weight: bold;
       padding-left: 5px;
+      font-size: 16px;
 }
 #main_header > #logo > ul.right > li {
       float: left;
@@ -103,9 +103,9 @@ body { min-width: 960px; }
 #main_header > #main_lnb > ul.left > li > a {
       display: block;
       padding: 2px 10px;
-      border: 1px solid #333;
-      color: #333;
+      border: 1px solid #bbb;
       font-size: 14px;
+      background: #f8f8f8;
 }
 
 #main_header > #main_lnb > ul.right > li {
@@ -113,7 +113,8 @@ body { min-width: 960px; }
 }
 #main_header > #main_lnb > ul.right > li > a {
       padding: 0 10px;
-      color: black;
+      color: #666;
+      font-size: 16p;
 }
 
 /* 본문(1) */
@@ -336,6 +337,28 @@ body { min-width: 960px; }
       text-align: center;
       font-weight: 600;
       font-size: 18px;
+}
+#content > #sub_section > #wrap > #link_list > div.link_item:nth-child(1) {
+      border-top: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+}
+#content > #sub_section > #wrap > #link_list > div.link_item:nth-child(2) {
+      border-top: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      margin-left: -4px;
+}
+#content > #sub_section > #wrap > #link_list > div.link_item:nth-child(3) {
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+}
+#content > #sub_section > #wrap > #link_list > div.link_item:nth-child(4) {
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      margin-left: -4px;
 }
 
 /* 푸터 */
