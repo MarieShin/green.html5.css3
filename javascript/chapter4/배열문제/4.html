@@ -15,13 +15,31 @@
         const num = window.prompt();
         const str = num.toString(); // 문자열은 배열화가 된다고 생각해야됨
         const result = [];
-        
-        // result.push(str.split(""));
+
+        var strSplit = str.split("");
+    
+        for (var i = 0; i < str.length; i++) {
+            result.push(strSplit[i]);
+        }
+
         // for (var i = 0; i < result.length; i++) {
-        //     if (i % 2 == 0) {
-        //         result.push("-");
+        //     if (Number(result[i]) % 2 == 0) {
+        //         console.log("===================");
+        //         // result.push("-");
         //     }
+
+        //     // if (i % 2 == 0) {
+        //     //     result.splice(i, 0, "-");
+        //     // }
         // }
+
+        for (i in result) {
+            if (result[i] % 2 == 0) {
+                console.log("===================");
+                // result.splice(i, 0, "-");
+            }
+            
+        }
 
         console.log(result);
 
