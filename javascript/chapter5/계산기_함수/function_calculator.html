@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>계산기(함수이용)</title>
+</head>
+<body>
+      <!--<div>
+            <h1>계산기 함수이용</h1>
+            <button id="btn_sum" onclick="console.log('덧셈 결과 : ' + sum(10,20))">덧셈</button>
+            <button id="btn_sub" onclick="console.log('뺄셈 결과 : ' + sub(10,20))">뺄셈</button>
+            <button id="btn_div" onclick="console.log('나눗셈 결과 : ' + division(10,20))">나눗셈</button>
+            <button id="btn_mul" onclick="console.log('곱셈 결과 : ' + multiple(10,20))">곱셈</button>
+            <button id="btn_ac" onclick="location.reload()">초기화</button> 
+      </div>-->
+
+      <script>
+            var num1 = Number(prompt("숫자 입력", "0"));
+            var num2 = Number(prompt("숫자 입력", "0"));
+
+            // 덧셈
+            function sum(a, b) {
+                  var sum = a + b;
+                  return sum;
+            }
+
+            // 뺄셈
+            function sub(a, b) {
+                  var sub = a - b;
+                  return sub;
+            }
+
+            // 나눗셈
+            function division(a, b) {
+                  var div = a / b;
+                  return div; 
+            }
+
+            // 곱셈
+            function multiple(a, b) {
+                  var mul = a * b;
+                  return mul;
+            }
+
+            document.write(sum(num1, num2), "<br />");
+            document.write(sub(num1, num2), "<br />");
+            document.write(division(num1, num2), "<br />");
+            document.write(multiple(num1, num2), "<br />");
+      </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>계산기</title>
+      <link rel="stylesheet" href="cal_style.css">
+</head>
+<body>
+      <div id="content">
+            <input type="text" id="resultValue" disabled>
+            <div class="button-wrap">
+                  <button class="ac" onclick="clear_del()">AC</button>
+                  <button onclick="cal('/')">&divide;</button>
+                  <button onclick="btn_click(7)">7</button>
+                  <button onclick="btn_click(8)">8</button>
+                  <button onclick="btn_click(9)">9</button>
+                  <button onclick="cal('*')">&times;</button>
+                  <button onclick="btn_click(4)">4</button>
+                  <button onclick="btn_click(5)">5</button>
+                  <button onclick="btn_click(6)">6</button>
+                  <button onclick="cal('-')">-</button>
+                  <button onclick="btn_click(1)">1</button>
+                  <button onclick="btn_click(2)">2</button>
+                  <button onclick="btn_click(3)">3</button>
+                  <button onclick="cal('+')">+</button>
+                  <button class="zero" onclick="btn_click(0)">0</button>
+                  <button onclick="btn_click('.')">.</button>
+                  <button onclick="compute()">=</button>
+            </div>
+      </div>
+
+      <script>
+            var num = 0;
+            var symbol;
+
+            // 숫자 버튼을 누를 때 호출한다.
+            function btn_click(a) {
+                  resultValue.value += a; // input 값에 입력한 버튼 값을 더해준다.
+                  console.log(a);
+                  console.log("btn_click : " + resultValue.value); 
+            }
+
+            // 연산자 버튼을 누를 때 호출한다.
+            function cal(b) {
+                  var firstNum = (document.getElementById("resultValue").value);    // 받아온 input 태그의 값을 변수에 저장한다.
+                  num = firstNum;   // 전역변수에 input 태그의 값을 저장해준다.
+                  symbol = b ;      // 전역변수에 받아온 값을 저장해준다. ('+', '-', '*', '/')
+                  console.log("cal : " + resultValue.value); 
+                  return document.getElementById("resultValue").value = "";         // 다음 입력값을 받기 위해 input 태그의 값을 초기화해준다.
+            }
+
+            // '='을 누를 때 호출한다.
+            function compute () {
+                  var secNum = parseFloat(document.getElementById("resultValue").value);  // 소수점이 있을 수 있기때문에 받아온 input 값을 parseFloat로 묶어준다.
+                  var result;
+                  // 연산자에 따라서 switch문을 돌려준다.
+                  switch (symbol) {
+                        case '+' : result = Number(num) + Number(secNum) ; 
+                        document.getElementById("resultValue").value = result;  // 연산한 값을 input 태그에 보여준다.
+                        break;
+                        case '-' : result = Number(num) - Number(secNum) ; 
+                        document.getElementById("resultValue").value = result;
+                        break;
+                        case '*' : result = Number(num) * Number(secNum) ; 
+                        document.getElementById("resultValue").value = result;
+                        break;
+                        case '/' : result = Number(num) / Number(secNum) ; 
+                        document.getElementById("resultValue").value = result;
+                        break;
+                        default : result = secNum;          // 연산자를 누르지않고 '=' 만 눌렀을 때
+                        document.getElementById("resultValue").value = result;
+
+                        // case '%' : result = Number(num) % Number(secNum) ; 
+                        // document.getElementById("resultValue").value = result;
+                        // break;
+                  }
+                  console.log("compute : " + resultValue.value);         
+            }
+
+            // AC 버튼을 누를 때 호출한다.
+            function clear_del() {
+                  // 값을 초기화 해준다.
+                  document.getElementById("resultValue").value = "";
+                  num = 0;
+            }
+      </script>
+</body>
+</html>
