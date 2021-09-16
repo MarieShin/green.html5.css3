@@ -13,13 +13,13 @@ img { border: 0; }
 
 /* 헤더 */
 #main_header {
-      width: 960px;
-      margin: 0 auto;
       position: relative;
       height: 170px;
 }
 
 #main_header > #logo {
+      width: 960px;
+      margin: 0 auto;
       overflow: hidden;
       padding-top: 20px;
       padding-left: 20px;
@@ -64,29 +64,41 @@ body { min-width: 960px; }
       width: 100%;
       border-top: 1px solid #ddd;
       border-bottom: 1px solid #ddd;
-      padding: 10px;
 }
 #main_header > #main_gnb > ul  {
+      width: 980px;
+      margin: 0 auto;
       overflow: hidden;
 }
 #main_header > #main_gnb > ul > li {
       float: left;
-      width: 12.5%;
+      padding-right: 80px;
+      height: 50px;
+      line-height: 50px;
+      box-sizing: border-box;
+      /* width: 12.5%; */
+}
+#main_header > #main_gnb > ul > li:last-child {
+      padding-right: 0px;
 }
 #main_header > #main_gnb > ul > li > a {
-      color: black;
-      font-weight: bold;
-      display: block;
+      color: #111;
+      font-weight: 300;
+      display: inline-block;
       text-align: center;
+      font-size: 17px;
+      letter-spacing: -1px;
 }
 
 /* 헤더 서브 네비게이션 (로그인 라인) */
 
 #main_header > #main_lnb {
-      position: absolute;
+      width: 960px;
+      margin: 0 auto;
+      /* position: absolute; */
       left: 20px; top: 70px;
       overflow: hidden;
-      width: 100%;
+      /* width: 100%; */
 }
 #main_header > #main_lnb > ul.left  {
       overflow: hidden;
@@ -121,6 +133,10 @@ body { min-width: 960px; }
 #content {
       width: 960px;
       margin: 0 auto;
+}
+
+#content > #main_section {
+      margin-top: 1px;
 }
 
 /* 본문 메뉴 */
@@ -364,15 +380,22 @@ body { min-width: 960px; }
 /* 푸터 */
 
 #main_footer {
-      width: 960px;
-      margin: 0 auto;
+      /* width: 960px;
+      margin: 0 auto; */
       margin-top: 80px;
+      border-top: 1px solid #ddd;
+}
+
+#main_footer > #footer_menu {
+      border-bottom: 1px solid #ddd;
 }
 
 #main_footer > #footer_menu > ul {
+      width: 960px;
+      margin: 0 auto;
       overflow: hidden;
-      border-top: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
+      /* border-top: 1px solid #ddd; */
+      /* border-bottom: 1px solid #ddd; */
       padding: 15px 0px;
 }
 #main_footer > #footer_menu > ul > li {
@@ -385,8 +408,11 @@ body { min-width: 960px; }
 }
 
 #main_footer > address {
+      width: 960px;
+      margin: 0 auto;
       font-size: 14px;
       margin-top: 30px;
       margin-bottom: 50px;
 }
 
+/* 배경색상 */
