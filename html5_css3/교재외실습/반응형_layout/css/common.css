@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/* 초기화 */
+
+* { 
+      margin: 0; padding: 0; 
+      font-family: Arial, 'sans-serif';
+}
+li { list-style: none; }
+a { text-decoration: none !important; }
+img { border: 0; }
+
+/* 헤더 */
+
+#main_header {
+      background: white;
+      color: black;
+}
+
+/* 헤더 위 */
+
+#main_header > .header_top a {
+      color: black;
+}
+
+#main_header > .header_top {
+      overflow: hidden;
+      padding: 18px 0;
+} 
+
+#main_header > .header_top > .logo {
+      float: left;
+      width: 100px;
+      height: 29px;
+      padding-left: 42px;
+}
+#main_header > .header_top > .nav_top {
+      float: right;
+      overflow: hidden;
+      margin-right: 42px;
+}
+
+#main_header > .header_top > .nav_top img {
+      width: 24px; height: 24px;
+}
+
+#main_header > .header_top > .nav_top > li:nth-child(7) {
+      display: none;
+}
+
+#main_header > .header_top > .nav_top > li {
+      float: left;
+}
+
+#main_header > .header_top > .nav_top > li > a {
+      padding-left: 10px;
+}
+
+/* 헤더 아래 */
+
+#main_header > .header_bottom {
+      padding-left: 42px;
+}
+
+#main_header > .header_bottom > div > ul {
+      overflow: hidden;
+}
+
+#main_header > .header_bottom > div > ul > li {
+      float: left;
+}
