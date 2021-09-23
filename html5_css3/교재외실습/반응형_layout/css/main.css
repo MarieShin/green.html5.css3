@@ -1,1 +1,236 @@
 @charset "UTF-8";
+
+/* 컨텐츠 */
+
+#main_content {
+      margin: 0 auto;
+      padding-top: 20px;
+      border-top: 1px #ddd solid;
+      max-width: 100%;
+}
+
+/* 동영상 컨텐츠 */
+
+#main_content > div.scene_cover {
+      text-align: center;
+}
+
+#main_content > div.scene_cover > div.scene {
+      padding: 0 30px;
+      margin-bottom: 90px;
+}
+
+#main_content > div.scene_cover > div.scene > img {
+      width: 100%;
+      height: 411px;
+      margin-bottom: 10px;
+}
+
+#main_content > div.scene_cover > div.scene > h3 {
+      font-size: 40px;
+      line-height: 50px;
+      margin-bottom: 10px;
+}
+
+#main_content > div.scene_cover > div.scene > p {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      line-height: 22px;
+}
+#main_content > div.scene_cover > div.scene > button {
+      margin: 0 4px;
+      line-height: 24px;
+      padding: 12px 0;
+      width: 122px;
+      height: 50px;
+      font-size: 16px;
+      border-radius: 26px;
+      border-color: black;
+      background-color: white;
+}
+
+#main_content > div.scene_cover > div.scene > button:hover {
+      border-color: #da0f47;
+      background: #da0f47;
+      color: white;
+}
+
+/* 섹션 컨텐츠 */
+
+#main_content > div.section_cover {
+      margin: 0 auto;
+}
+
+#main_content > div.section_cover > div.section {
+      margin: 120px 0 auto;
+      padding: 0 40px;
+}
+
+#main_content > div.section_cover > div.section > h3 {
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+}
+
+#main_content > div.section_cover > div.section > img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 50px;
+}
+
+#main_content > div.section_cover > div.section > div.item_box {
+      /* height: 228px; */
+      border-radius: 8px;
+      padding: 48px 72px 48px 144px;
+      text-align: left;
+}
+
+#main_content > div.section_cover > div.section > div.item_box:nth-of-type(1) {
+      background: #f1e6ed;
+      margin-bottom: 15px;
+      margin-top: 40px;
+}
+#main_content > div.section_cover > div.section > div.item_box:nth-of-type(2) {
+      background: #f3e2e2;
+}
+
+#main_content > div.section_cover > div.section > div.item_box > h3 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 52px;
+}
+
+#main_content > div.section_cover > div.section > div.item_box > p {
+      margin-top: 4px;
+      color: #000;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+}
+
+#main_content > div.section_cover > div.section > div.item_box > a {
+      display: inline-block;
+      margin-top: 20px;
+      padding-right: 20px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 26px;
+      text-decoration: underline;
+      color: black;
+}
+
+/* 멤버십 혜택, 가전 관리 */
+
+#main_content > div.section_cover > div.section > div.item_gray {
+      overflow: hidden;
+      margin-bottom: 30px;
+}
+
+#main_content > div.section_cover > div.section > div.item_gray:nth-of-type(1) > div.item_gray_box {
+      float: left;
+      /* width: 50%; */
+      width: calc((100% - 30px)/2);
+      height: 154px;
+      background: #f4f4f4;
+      text-align: left;
+      padding: 50px 70px;
+      border-radius: 8px;
+}
+
+#main_content > div.section_cover > div.section > div.item_gray > div.item_space {
+      float: left;
+      width: 30px;
+      height: 154px;
+}
+
+#main_content > div.section_cover > div.section > div.item_gray:nth-of-type(2) > div.item_gray_box {
+      float: left;
+      /* width: 33.3%; */
+      width: calc((100% - 30px) / 3);
+      height: 154px;
+      background: #f4f4f4;
+      text-align: left;
+      padding: 50px 60px;
+      border-radius: 8px;
+}
+
+#main_content > div.section_cover > div.section > .notice {
+      background: #f4f4f4;
+      border-radius: 8px;
+}
+
+
+
+/* 미디어 쿼리 */
+
+@media screen and (max-width: 767px) {
+      #main_content > div.scene_cover > div.scene {
+            text-align: left;
+            margin-bottom: 50px;
+            padding: 0 15px;
+      }
+      #main_content > div.scene_cover > div.scene > h3 {
+            font-size: 24px;
+            line-height: 1.21;
+      }
+      #main_content > div.scene_cover > div.scene > p {
+            margin-top: 9px;
+            font-size: 13px;
+            line-height: 1.38;
+            margin-bottom: 5px;
+      }
+      #main_content > div.scene_cover > div.scene > button {
+            width: 94px;
+            height: 36px;
+            line-height: 36px;
+            font-size: 13px;
+            border-radius: 21px;
+            padding: 0; margin: 0;
+            font-weight: 400;
+      }
+
+      #main_content > div.section_cover > div.section > h3 {
+            font-size: 20px;
+            line-height: 24px;
+      }
+      #main_content > div.section_cover > div.section:first-child > img {
+            margin-top: 20px;
+            margin-bottom: 40px;
+      }
+      #main_content > div.section_cover > div.section {
+            margin: 0;
+            padding: 0 20px;
+      }
+
+      #main_content > div.section_cover > div.section > div.item_box:nth-of-type(1) {
+            margin-top: 20px;
+      }
+
+      #main_content > div.section_cover > div.section > div.item_box > h3 {
+            font-size: 24px;
+            line-height: 33px;
+      }
+
+      #main_content > div.section_cover > div.section > div.item_box > p {
+            margin-top: 4px;
+            font-size: 14px;
+            line-height: 22px;
+      }
+      #main_content > div.section_cover > div.section > div.item_box > a {
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 10px;
+            line-height: 20px;
+            text-decoration: underline;
+      }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+      #main_content > div.scene_cover > div.scene > h3 {
+            font-size: 30px;
+      }
+}
+
+@media screen and (min-width: 1024px) {
+}

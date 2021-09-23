@@ -7,6 +7,7 @@
       <title>LG 전자</title>
       <link rel="stylesheet" href="css/common.css">
       <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="library/bootstrap/bootstrap-5.1.1-dist/css/bootstrap.min.css">
 </head>
 <body>
       <header id="main_header">
@@ -16,33 +17,101 @@
                   </div>
                   <ul class="nav_top">
                         <li><a href="#"><img src="img/icon-search-48.svg" alt="검색"></a></li>
-                        <li><a href="#"><img src="img/icon-person.svg" alt="로그인"></a></li>
+                        <li class="login"><a href="#"><img src="img/icon-person.svg" alt="로그인"></a></li>
                         <li><a href="#"><img src="img/icon-cart-48.svg" alt="장바구니"></a></li>
-                        <li><a href="#">회사소개</a></li>
-                        <li><a href="#">B2B</a></li>
-                        <li><a href="#">LG베스트샵</a></li>
-                        <li><a href="#"><img src="img/btn-hamburger-48.svg" alt="메뉴"></a></li>
+                        <li class="company"><a href="#">회사소개</a></li>
+                        <li class="b2b"><a href="#">B2B</a></li>
+                        <li class="lg_bestshop"><a href="#">LG베스트샵</a></li>
+                        <li class="btn_menu"><a href="#"><img src="img/btn-hamburger-48.svg" alt="메뉴"></a></li>
                   </ul>
             </div>
             <div class="header_bottom">
                   <div>
                         <ul>
-                              <li>스토어</li>
-                              <li>스토리</li>
-                              <li>고객지원</li>
-                              <li>렌탈/케어</li>
-                              <li>이벤트/멤버십</li>
-                              <li>마이컬렉션</li>
-                              <li>LG SIGNATURE</li>
-                              <li>LG TingQ</li>
-                              <li>LG Object Collection</li>
+                              <li><a href="#">스토어</a></li>
+                              <li><a href="#">스토리</a></li>
+                              <li><a href="#">고객지원</a></li>
+                              <li><a href="#">렌탈/케어</a></li>
+                              <li><a href="#">이벤트/멤버십</a></li>
+                              <li><a href="#">마이컬렉션</a></li>
+                        </ul>
+                        <ul class="box_nav">
+                              <li><a href="#"><img src="img/logo-signature.svg" alt=""></a></li>
+                              <li><a href="#"><img src="img/logo-thinq.svg" alt=""></a></li>
+                              <li><a href="#"><img src="img/logo-objet-collection.svg" alt=""></a></li>
                         </ul>
                   </div>
             </div>
       </header>
       <div id="main_content">
-            <div class="scene_cover"></div>
-            <div class="section_cover"></div>
+            <div class="scene_cover">
+                  <div class="scene">
+                        <img src="https://via.placeholder.com/960x450" alt="">
+                        <h3>가전, 제품이 되다</h3>
+                        <p>초 프리미엄 가전 LG SIGNATURE</p>
+                        <button>체험하기</button>
+                  </div>
+                  <div class="scene">
+                        <img src="https://via.placeholder.com/960x450" alt="">
+                        <h3>우리집을 홈카페로 만들기</h3>
+                        <p>오브제컬렉션으로 바꾸는 우리집 분위기 여러분도 한 번 시도해보시겠어요?</p>
+                        <button>제품보기</button>
+                        <button>스토리 보기</button>
+                  </div>
+            </div>
+            <div class="section_cover">
+                  <div class="section">
+                        <h3>당신이 원하는 삶을 누려보세요</h3>
+                        <img src="https://via.placeholder.com/960x450" alt="">
+                  </div>
+                  <div class="section">
+                        <h3>아직 고민이라면, 이렇게 하세요</h3>
+                        <div class="item_box">
+                              <h3>고객님께 딱 맞는 가전은?</h3>
+                              <p>내게 맞는 제품 추천 받기</p>
+                              <a href="#">제품 큐레이션 ></a>
+                        </div>
+                        <div class="item_box">
+                              <h3>베스트샵에서 상담 받으세요</h3>
+                              <p>오프라인 매장 상담 예약하기</p>
+                              <a href="#">매장 상담 예약 ></a>
+                        </div>
+                  </div>
+                  <div class="section">
+                        <div class="item_gray">
+                              <h3>멤버십 혜택을 받아가세요</h3>
+                              <div class="item_gray_box">
+                                    <h5>혜택받는 멤버십 가입 ></h5>
+                                    <p>LG전자 멤버십 회원으로 다양한 구매 및 고객 서비스 관련 혜택 누리기</p>
+                              </div>
+                              <div class="item_space"></div>
+                              <div class="item_gray_box">
+                                    <h5>멤버십 포인트 적립 ></h5>
+                                    <p>다양한 이벤트를 통해 포인트 적립 및 사용하기</p> 
+                              </div>
+                        </div>
+                        <div class="item_gray">
+                              <h3>가전 관리 잊지마세요!</h3>
+                              <div class="item_gray_box">
+                                    <h5>내 제품 등록 ></h5>
+                                    <p>고객님의 보유 제품을 등록하고 관리하기</p>
+                              </div>
+                              <div class="item_space"></div>
+                              <div class="item_gray_box">
+                                    <h5>출장 서비스 예약 ></h5>
+                                    <p>전문 엔지니어가 도와주는 출장 서비스 예약하기</p>
+                              </div>
+                              <div class="item_space"></div>
+                              <div class="item_gray_box">
+                                    <h5>케이십 안내 ></h5>
+                                    <p>케어솔루션 매니저의 전문적인 케어서비스 받기</p>
+                              </div>
+                        </div>
+                        <div class="notice">
+                              <h3>공지사항</h3>
+                        </div>
+                  </div>
+            </div>
       </div>
       <footer id="main_footer">
             <div>
@@ -60,11 +129,12 @@
                   </div>
             </div>
             <div>
-                  <div>
-
-                  </div>
+                  <div></div>
                   <div></div>
             </div>
       </footer>
+
+      <link rel="stylesheet" href="library/bootstrap/js/jquery-3.6.0.min.js">
+
 </body>
 </html>

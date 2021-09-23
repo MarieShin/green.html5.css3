@@ -4,7 +4,8 @@
 
 * { 
       margin: 0; padding: 0; 
-      font-family: Arial, 'sans-serif';
+      font-family: 'Noto Sans', 'sans-serif';
+      color: black;
 }
 li { list-style: none; }
 a { text-decoration: none !important; }
@@ -21,6 +22,8 @@ img { border: 0; }
 
 #main_header > .header_top a {
       color: black;
+      max-width: 1780px;
+      margin: 0 auto;
 }
 
 #main_header > .header_top {
@@ -44,28 +47,111 @@ img { border: 0; }
       width: 24px; height: 24px;
 }
 
-#main_header > .header_top > .nav_top > li:nth-child(7) {
+#main_header > .header_top > .nav_top > li.btn_menu {
       display: none;
 }
 
 #main_header > .header_top > .nav_top > li {
       float: left;
+      line-height: 24px;
 }
 
 #main_header > .header_top > .nav_top > li > a {
-      padding-left: 10px;
+      padding-right: 15px;
+      font-size: 14px;
 }
+
+/* #main_header > .header_top > .nav_top > li:nth-child(4), li:nth-child(5) > a {
+      border-left: 1px #ddd solid;
+} */
 
 /* 헤더 아래 */
 
 #main_header > .header_bottom {
       padding-left: 42px;
+      margin-bottom: 5px;
+}
+
+#main_header > .header_bottom > div {
+      overflow: hidden;
 }
 
 #main_header > .header_bottom > div > ul {
       overflow: hidden;
+      float: left;
+      height: 24px;
+}
+#main_header > .header_bottom > div > ul.box_nav {
+      overflow: hidden;
+      float: left;
+      margin-left: 10px;
+      height: 32px;
+      line-height: 32px;
+      /* padding: 4px 8px; */
+      border-radius: 18px;
+      background-color: #f4f4f4;
+      display: block;
+}
+
+#main_header > .header_bottom > div > ul.box_nav img {
+      vertical-align: middle;
 }
 
 #main_header > .header_bottom > div > ul > li {
       float: left;
+}
+
+#main_header > .header_bottom > div > ul > li > a {
+      display: block;
+      padding: 4px 12px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: black;
+      vertical-align: top;
+}
+
+/* 푸터 */
+
+#main_footer {
+      height: 480px;
+      background: #f4f4f4;
+}
+
+
+
+
+/* 미디어 쿼리 */
+
+@media screen and (max-width: 767px) {
+      * {
+            margin: 0; padding: 0;
+      }
+      #main_header > .header_top > .nav_top > li.btn_menu {
+            display: block;
+      }
+      #main_header > .header_top > ul.nav_top > .login, .company, .b2b, .lg_bestshop {
+            display: none;
+      }
+      #main_header > .header_bottom > div > ul:nth-child(2) {
+            display: none;
+      }
+      #main_header > .header_bottom > div > ul:nth-child(1) { 
+            display: block;
+            width: 100%;
+      }
+      #main_header > .header_bottom > div > ul > li > a {
+            display: block;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: black;
+      }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (min-width: 1024px) {
 }
