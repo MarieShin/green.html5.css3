@@ -10,6 +10,7 @@
 li { list-style: none; }
 a { text-decoration: none !important; }
 img { border: 0; }
+ul, ol { padding-left: 0 !important; }
 
 /* 헤더 */
 
@@ -111,12 +112,57 @@ img { border: 0; }
       vertical-align: top;
 }
 
+#main_header > .header_bottom > div > ul > li.home {
+      display: none;
+}
+
 /* 푸터 */
 
 #main_footer {
       height: 480px;
       background: #f4f4f4;
+      margin-top: 30px;
+      padding: 0 50px;
 }
+
+#main_footer > .btn_all_menu {
+      text-align: center;
+      padding-top: 30px;
+      margin-bottom: 50px;
+}
+
+#main_footer > .btn_all_menu > button {
+      border-radius: 18px;
+      padding: 5px 10px;
+      font-size: 14px;
+}
+
+#main_footer > .footer_info {
+      border-top: 1px #ddd solid;
+      border-bottom: 1px #ddd solid;
+      padding: 20px 0;
+      font-size: 12px;
+      color: black;
+      overflow: hidden;
+}
+
+#main_footer > .footer_info > div:nth-child(1) {
+      float: left;
+}
+#main_footer > .footer_info > div:nth-child(2) {
+      float: right;
+}
+
+#main_footer > .footer_info h5 {
+      font-size: 12px;
+      font-weight: 400;
+}
+
+#main_footer > .footer_info a {
+      color: black;
+      padding-right: 10px;
+}
+
 
 
 
@@ -124,8 +170,16 @@ img { border: 0; }
 /* 미디어 쿼리 */
 
 @media screen and (max-width: 767px) {
-      * {
-            margin: 0; padding: 0;
+      /* 헤더 */
+
+      #main_header > .header_top {
+            padding: 10px 0 5px;
+      } 
+      #main_header > .header_top > .logo {
+            padding-left: 10px;
+      }
+      #main_header > .header_top > .nav_top {
+            margin-right: 0px;
       }
       #main_header > .header_top > .nav_top > li.btn_menu {
             display: block;
@@ -146,6 +200,30 @@ img { border: 0; }
             font-size: 14px;
             line-height: 24px;
             color: black;
+      }
+      #main_header > .header_bottom {
+            padding-left: 0px;
+            margin-bottom: 0px;
+      }
+      #main_header > .header_bottom > div > ul > li.home {
+            display: block;
+      }
+      #main_header > .header_bottom > div > ul > li.collection {
+            display: none;
+      }
+
+      /* 푸터 */
+      #main_footer {
+            padding-top: 20px;
+      }
+      #main_footer > .btn_all_menu {
+            display: none;
+      }
+      #main_footer > .footer_info > div:nth-child(1) {
+            float: none;
+      }
+      #main_footer > .footer_info > div:nth-child(2) {
+            float: none;
       }
 }
 

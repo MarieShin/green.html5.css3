@@ -67,16 +67,18 @@
       padding: 0 40px;
 }
 
-#main_content > div.section_cover > div.section > h3 {
+#main_content > div.section_cover > div.section h3 {
       font-size: 32px;
       font-weight: 700;
       text-align: center;
+      margin-bottom: 44px;
+      line-height: 52px;
 }
 
 #main_content > div.section_cover > div.section > img {
       width: 100%;
       border-radius: 10px;
-      margin-top: 50px;
+      /* margin-top: 50px; */
 }
 
 #main_content > div.section_cover > div.section > div.item_box {
@@ -89,16 +91,13 @@
 #main_content > div.section_cover > div.section > div.item_box:nth-of-type(1) {
       background: #f1e6ed;
       margin-bottom: 15px;
-      margin-top: 40px;
 }
 #main_content > div.section_cover > div.section > div.item_box:nth-of-type(2) {
       background: #f3e2e2;
 }
 
 #main_content > div.section_cover > div.section > div.item_box > h3 {
-      font-size: 32px;
-      font-weight: 700;
-      line-height: 52px;
+      text-align: left;
 }
 
 #main_content > div.section_cover > div.section > div.item_box > p {
@@ -127,10 +126,18 @@
       margin-bottom: 30px;
 }
 
+/* #main_content > div.section_cover > div.section > div.item_gray > h3 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 52px;
+      text-align: center;
+      margin-bottom: 44px;
+} */
+
 #main_content > div.section_cover > div.section > div.item_gray:nth-of-type(1) > div.item_gray_box {
       float: left;
       /* width: 50%; */
-      width: calc((100% - 30px)/2);
+      width: calc((100% - 15px)/2);
       height: 154px;
       background: #f4f4f4;
       text-align: left;
@@ -140,7 +147,7 @@
 
 #main_content > div.section_cover > div.section > div.item_gray > div.item_space {
       float: left;
-      width: 30px;
+      width: 15px;
       height: 154px;
 }
 
@@ -158,6 +165,13 @@
 #main_content > div.section_cover > div.section > .notice {
       background: #f4f4f4;
       border-radius: 8px;
+      padding: 4px 10px;
+      height: 50px;
+      line-height: 50px;
+      
+}
+#main_content > div.section_cover > div.section > .notice > p {
+      display: inline-block;
 }
 
 
@@ -165,6 +179,9 @@
 /* 미디어 쿼리 */
 
 @media screen and (max-width: 767px) {
+
+      /* 동영상 컨텐츠 */
+
       #main_content > div.scene_cover > div.scene {
             text-align: left;
             margin-bottom: 50px;
@@ -190,14 +207,13 @@
             font-weight: 400;
       }
 
+      /* 섹션 컨텐츠 */
+
       #main_content > div.section_cover > div.section > h3 {
             font-size: 20px;
             line-height: 24px;
       }
-      #main_content > div.section_cover > div.section:first-child > img {
-            margin-top: 20px;
-            margin-bottom: 40px;
-      }
+      
       #main_content > div.section_cover > div.section {
             margin: 0;
             padding: 0 20px;
@@ -224,11 +240,54 @@
             line-height: 20px;
             text-decoration: underline;
       }
+      #main_content > div.section_cover > div.section > div.item_box {
+            /* height: 220px; */
+            padding: 40px 16px 40px 108px;
+      }
+      #main_content > div.section_cover > div.section > div.item_gray > h3 {
+            font-size: 20px;
+            line-height: 27px;
+      }
+      #main_content > div.section_cover > div.section {
+            margin-top: 60px;
+      }
+      #main_content > div.section_cover > div.section h3 {
+            margin-bottom: 24px;
+      }
+
+      /* 멤버십 혜택, 가전 관리 */
+
+      #main_content > div.section_cover > div.section > div.item_gray:nth-of-type(1) > div.item_gray_box {
+            width: 100%;
+            height: 112px;
+            padding: 20px 40px;
+      }
+      #main_content > div.section_cover > div.section > div.item_gray > div.item_space {
+            height: 10px;
+      }
+      #main_content > div.section_cover > div.section > div.item_gray:nth-of-type(2) > div.item_gray_box {
+            width: 100%;
+            height: 112px;
+            padding: 20px 40px;
+      }
+      #main_content > div.section_cover > div.section > div.item_gray > div.item_gray_box > h5 {
+            padding-right: 21px;
+            font-size: 16px;
+            line-height: 24px;
+      }
+      #main_content > div.section_cover > div.section > div.item_gray > div.item_gray_box > p {
+            margin-top: 4px;
+            font-size: 14px;
+            line-height: 22px;
+      }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-      #main_content > div.scene_cover > div.scene > h3 {
-            font-size: 30px;
+
+      /* 멤버십 혜택, 가전 관리 */
+
+      #main_content > div.section_cover > div.section > div.item_gray:nth-child(2) > div.item_gray_box {
+            width: calc((100% - 30px)/2);
       }
 }
 
