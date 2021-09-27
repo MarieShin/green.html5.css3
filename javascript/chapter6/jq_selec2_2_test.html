@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>js even/odd 선택자</title>
+</head>
+<body>
+      <h1>탐색 선택자</h1>
+      <ul id="menu">
+            <li>내용1</li>
+            <li>내용2</li>
+            <li>내용3</li>
+            <li>내용4</li>
+      </ul>
+
+      <script src="../jquery-3.6.0.min.js"></script>
+      <script>
+            $(function() {
+                  // even : 짝수 인덱스, odd : 홀수 인덱스 (인덱스 : 0,1,2,3)
+                  $("#menu li:even")
+                  .css({"background-color": "#ff0"});
+
+                  $("#menu li:odd")
+                  .css({"background-color": "#0ff"});
+            });
+      </script>
+</body>
+</html>
