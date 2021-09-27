@@ -8,9 +8,9 @@
       color: black;
 }
 li { list-style: none; }
-a { text-decoration: none !important; }
+a { text-decoration: none; }
 img { border: 0; }
-ul, ol { padding-left: 0 !important; }
+ul, ol { padding-left: 0 !important; }    /* 부트스트랩 라이브러리에 코드가 적용되있어서 !important로 선언 */
 
 /* 헤더 */
 
@@ -60,11 +60,8 @@ ul, ol { padding-left: 0 !important; }
 #main_header > .header_top > .nav_top > li > a {
       padding-right: 15px;
       font-size: 14px;
+      text-decoration: none;
 }
-
-/* #main_header > .header_top > .nav_top > li:nth-child(4), li:nth-child(5) > a {
-      border-left: 1px #ddd solid;
-} */
 
 /* 헤더 아래 */
 
@@ -110,6 +107,7 @@ ul, ol { padding-left: 0 !important; }
       line-height: 24px;
       color: black;
       vertical-align: top;
+      text-decoration: none;
 }
 
 #main_header > .header_bottom > div > ul > li.home {
@@ -121,13 +119,13 @@ ul, ol { padding-left: 0 !important; }
 #main_footer {
       height: 480px;
       background: #f4f4f4;
-      margin-top: 30px;
+      margin-top: 120px;
       padding: 0 50px;
 }
 
 #main_footer > .btn_all_menu {
       text-align: center;
-      padding-top: 30px;
+      padding-top: 50px;
       margin-bottom: 50px;
 }
 
@@ -161,6 +159,7 @@ ul, ol { padding-left: 0 !important; }
 #main_footer > .footer_info a {
       color: black;
       padding-right: 10px;
+      text-decoration: none;
 }
 
 
@@ -170,10 +169,11 @@ ul, ol { padding-left: 0 !important; }
 /* 미디어 쿼리 */
 
 @media screen and (max-width: 767px) {
+
       /* 헤더 */
 
       #main_header > .header_top {
-            padding: 10px 0 5px;
+            padding: 10px 0 0;
       } 
       #main_header > .header_top > .logo {
             padding-left: 10px;
@@ -213,8 +213,10 @@ ul, ol { padding-left: 0 !important; }
       }
 
       /* 푸터 */
+
       #main_footer {
             padding-top: 20px;
+            margin-top: 60px;
       }
       #main_footer > .btn_all_menu {
             display: none;
@@ -228,7 +230,6 @@ ul, ol { padding-left: 0 !important; }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-
 }
 
 @media screen and (min-width: 1024px) {
