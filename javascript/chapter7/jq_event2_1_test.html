@@ -4,8 +4,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>jq focus()/blur()/focusin()/focusout() 이벤트 메서드</title>
-      <style></style>
+      <title>Document</title>
 </head>
 <body>
       <h1>focus/blur</h1>
@@ -20,7 +19,7 @@
             </p>
       </form>
       <h1>focusin/focusout</h1>
-      <form action="#">
+      <form action="#" id="frm_2">
             <p>
                   <label for="user_id_2">ID</label>
                   <input type="text" name="user_id_2" id="user_id_2">
@@ -34,7 +33,18 @@
       <script src="../jquery-3.6.0.min.js"></script>
       <script>
             $(function() {
-                  
+                  $("#user_id_1, #user_pw_1").on("focus", function() {
+                        $(this).css({"background-color":"pink"});
+                  });
+                  $("#user_id_1, #user_pw_1").on("blur", function() {
+                        $(this).css({"background-color":"#fff"});
+                  });
+                  $("#frm_2").on("focusin", function() {
+                        $(this).css({"background-color":"pink"});
+                  });
+                  $("#frm_2").on("focusout", function() {
+                        $(this).css({"background-color":"#fff"});
+                  });
             });
       </script>
 </body>
