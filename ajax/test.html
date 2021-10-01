@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <div>
+            <span>온도:</span>
+            <span id="temp"></span>
+            <br />
+            <span>바람:</span>
+            <span id="wind"></span>
+            <br />
+            <span>맑음/흐림여부:</span>
+            <span id="main"></span>
+            <br />
+            <span>위경도:</span>
+            <span id="lat_lon"></span>
+            <br />
+            <span>습도:</span>
+            <span id="humidity"></span>
+            <br />
+            <span>날씨 아이콘 아이디:</span>
+            <span id="icon"></span>
+            <br />
+            <!-- <span>지난 3시간 동안의 강우량:</span>
+            <span id="3hours_rain"></span>
+            <br /> -->
+            <span>도시 id:</span>
+            <span id="city_id"></span>
+      </div>
+
+      <script src="../javascript/jquery-3.6.0.min.js"></script>
+      <script>
+            var   url = "https://api.openweathermap.org/data/2.5/weather";
+                  url  += "?q=incheon";
+                  url  += "&appid=4f0f6bb1d970d1be49fd39355683528e";
+                  url  += "&units=metric";
+                  url  += "&lang=kr";
+            $.ajax({
+                  type: "GET",
+                  url: url,
+                  dataType: "json",
+                  success: function(data) {
+                        // 정상 응답 시 처리 작업
+                        console.log(data);
+
+                        $('#temp').text(data.main.temp + "℃");
+                        $('#wind').text(data.wind.speed + "m/s");
+                        $('#main').text(data.weather[0].description);
+                        $('#lat_lon').text(data.coord.lat +"/"+ data.coord.lon);
+                        $('#humidity').text(data.main.humidity);
+                        $('#icon').text(data.weather[0].icon);
+                        $('#city_id').text(data.id);
+                  },
+                  error: function(request, status, error) {
+                        // 응답 에러 시 처리 작업
+                        console.log("code: " + request.status);
+                        console.log("message:" + request.responseText);
+                        console.log("error: " + error);
+                  },
+                  complete: function(data, textStatus) {
+                        // 작업 완료 후 처리
+                        // 생략 가능
+                  }
+            });
+      </script>
+</body>
+</html>
