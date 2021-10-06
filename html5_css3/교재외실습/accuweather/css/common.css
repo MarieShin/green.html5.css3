@@ -213,6 +213,11 @@ img { border: 0; }
       text-align: center;
 }
 
+#main_footer a {
+      color: black;
+}
+
+
 /* 모바일 메뉴 */
 #mobile_menu {
       display: none;

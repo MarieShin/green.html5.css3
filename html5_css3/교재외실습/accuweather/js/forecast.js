@@ -17,7 +17,6 @@ function getCurrentWeather(city) {
             async: false,   // 결과 데이터를 리턴시키기 위해 동기 방식으로 변경
             success: function(data) {
                   // 정상 응답 시 처리 작업
-                  console.log(data);
                   dataObj = data;
             },
             error: function(request, status, error) {
@@ -33,5 +32,26 @@ function getCurrentWeather(city) {
 
 // 현재 날씨 온도 얻어오기
 function getCurrentTemp(city) {
+      var temp;
+      var openweatherAPI = url;
 
+      $.ajax({
+            type: "GET",
+            url: openweatherAPI += city,
+            dataType: "json",
+            async: false,   // 결과 데이터를 리턴시키기 위해 동기 방식으로 변경
+            success: function(data) {
+                  // 정상 응답 시 처리 작업
+                  temp = Math.floor(data.main.temp);  // 소수점 버림
+                  console.log(temp);
+            },
+            error: function(request, status, error) {
+                  // 응답 에러 시 처리 작업
+                  console.log("code: " + request.status);
+                  console.log("message:" + request.responseText);
+                  console.log("error: " + error);
+            }
+      });
+
+      return temp;
 }
