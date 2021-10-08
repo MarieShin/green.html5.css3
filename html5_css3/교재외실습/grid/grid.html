@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+            .wrapper {
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  grid-column-gap: 30px;
+                  grid-row-gap: 20px
+
+                  /* grid-template-columns: 200px 200px 200px;
+                  grid-template-rows: minmax(100px auto); */
+            }
+
+            .item {
+                  padding: 10px;
+                  background-color: #eee;
+            }
+
+            .item:nth-child(odd) {
+                  background-color: #bbb;
+            }
+      </style>
+</head>
+<body>
+      <div class="wrapper">
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sint explicabo magnam voluptas nam eum est amet, tempora fuga aspernatur blanditiis soluta ea numquam. Harum eos id quisquam cupiditate laborum!</div>
+            <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur repudiandae, assumenda dicta maxime delectus deleniti optio ratione blanditiis iste commodi? Tempora aspernatur inventore ipsa laboriosam dicta nemo unde fuga ex?</div>
+            <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dignissimos modi, dolor nisi aut ab ipsum optio! Praesentium tenetur, hic in reiciendis sed laborum. Deserunt excepturi quibusdam temporibus molestiae consectetur.</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe consequuntur in quis doloremque, veritatis quidem cupiditate neque minima veniam deserunt harum facilis magnam, molestiae placeat, reiciendis ullam unde temporibus quas.</div>
+            <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt cupiditate fugiat, sed ipsum deserunt blanditiis nisi soluta minus fugit consectetur? Et exercitationem temporibus accusantium vero obcaecati debitis quasi blanditiis aspernatur!</div>
+      </div>
+</body>
+</html>
